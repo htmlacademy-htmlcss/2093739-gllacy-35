@@ -1,8 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Никита Завьялов](https://up.htmlacademy.ru/htmlcss/35/user/2093739).
-* Наставник: `Дмитрий Гуляев`
-`https://htmlacademy.ru/profile/id87930`.
+* Наставник: `Дмитрий Гуляев` `https://htmlacademy.ru/profile/id87930`.
 
 ---
 

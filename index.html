@@ -5,6 +5,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <!-- Хедер сайта. Включает блок навигации и блок с кнопками. Первый элемент нав блок а- это логотип, второй - заглушка с селектором. -->
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -32,17 +33,21 @@
       </nav>
     </header>
     <main>
+    <!-- Первый смысловой блок основного содержимого, продуктовый слайдер. Внутри 4 блока, текстовый с заголовком первого уровня, блок изображений продуктов с кнопками-перелистывателями слайдера, блок с точками-"пулями" слайдера и блок социальный ссылок. -->
       <section class="products-slider">
         <div class="slider-text">
           <h1 class="slider-title">Нежный пломбир с клубничным джемом</h1>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-          <button class="slider-button slider-order">Заказать</button>
+          <button class="slider-order">Заказать</button>
         </div>
         <div class="slider-image">
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">Предыдущий</span>
-        </div>
-        <div class="slider-bullets">
+          <button class="slider-previous" type="button">Предыдущий продукт</button>
+          <img class="current-product" src="#" alt="Нежный пломбир с клубничным джемом">
+          <button class="slider-next" type="button">Следующий продукт</button>
+            <img class="next-product" src="#" alt="Сливочное мороженое со вкусом банана">
+            <img class="next-product" src="#" alt="Карамельный пломбир с маршмеллоу">
+          </div>
+        <div class="slider-bullets">...
         </div>
         <section class="social slider-social">
           <ul class="social-list">
@@ -63,6 +68,72 @@
             </li>
           </ul>
         </section>
+      </section>
+        <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел. Заголовок второго уровня и одинаковые блоки с заголовками третьего уровня и описаниями -->
+      <section class="products-gift">
+        <h2 class="section-title">Заказывайте мороженое и получайте подарки!</h2>
+        <article class="article-gift">
+          <h3 class="gift-title">Малинка даром!</h3>
+          <p class="gift-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно</p>
+          <button class="gift-button">Хочу подарок</button>
+          <img src="#" alt="Малинка">
+        </article>
+        <article class="article-gift">
+          <h3 class="gift-title">Маршмеллоу даром!</h3>
+          <p class="gift-description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <button class="gift-button">Хочу подарок</button>
+          <img src="#" alt="Маршмеллоу">
+        </article>
+      </section>
+      <section class="products-popular">
+        <h2 class="popular"></h2>
+        <article class="">
+          <img src="#" alt="Малинка">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <button>В корзину</button>
+        </article>
+        <article>
+          <img src="#" alt="Фисташка">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <button></button>
+        </article>
+        <article>
+          <img src="#" alt="Черника">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <button></button>
+        </article>
+        <article>
+          <img src="#" alt="Бабл-гам">
+          <h3></h3>
+          <p></p>
+          <p></p>
+          <button></button>
+        </article>
+      </section>
+      <section class="products-advantages">
+        <p class="products-about">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <img src="#" alt="Мороженое">
+        <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+        <img src="#" alt="Поставщики">
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+        <img src="#" alt="Натуральное сырье">
+        <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+        <img src="#" alt="Температура">
+        <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+      </section>
+      <section>
+        <article>
+          <p></p>
+        </article>
+        <article>
+          <p></p>
+        </article>
       </section>
     </main>
     <footer>

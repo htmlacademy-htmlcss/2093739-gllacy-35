@@ -65,22 +65,21 @@
           </div>
         <!-- Блок с точками-"пулями", не отображается визуально, пока заглушка в виде троеточия -->
         <div class="slider-bullets">...</div>
-        <!-- "Социальный" блок с ссылками -->
+        <!-- "Социальный" блок с ссылками, двойной класс т.к. данный блок повторяется в футере -->
         <section class="social slider-social">
-          <!-- Двойной класс т.к. данный блок повторяется в футере -->
           <ul class="social-list">
             <li class="social-item">
-              <a href="#">
+              <a class="social-link" href="#">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="social-item">
-              <a href="#">
+              <a class="social-link" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
-              <a href="#">
+              <a class="social-link" href="#">
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
@@ -105,37 +104,39 @@
           <button class="gift-button">Хочу подарок</button>
           <img class="gift-img" src="#" alt="Маршмеллоу">
         </article>
-      <!-- Блок с карточками популярных продуктов -->
       </section>
+      <!-- Блок с карточками популярных продуктов -->
+      <!-- Скрытый заголовок 3го уровня, двойные классы <ul> и потомков для страницы каталога -->
       <section class="products-popular">
-        <h2 class="popular">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul>
-          <li class="">
-            <img src="#" alt="Мороженое «Малинка»">
-            <h3>Малинка</h3>
-            <p></p>
-            <p></p>
+        <h2 class="section-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="products-list popular-list">
+          <h3 class="visually-hidden">Популярные вкусы</h3>
+          <li class="product-card popular-card">
+            <img class="card-img popular-img" src="#" alt="Мороженое «Малинка»">
+            <h4 class="card-title popular-title">Малинка</h4>
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <p><b>310 ₽/кг</b></p>
             <button>В корзину</button>
           </li>
-          <li>
-            <img src="#" alt="Мороженое «Фисташка»">
-            <h3>Фисташка</h3>
-            <p></p>
-            <p></p>
+          <li class="product-card popular-card">
+            <img class="card-img popular-img" src="#" alt="Мороженое «Фисташка»">
+            <h4 class="card-title popular-title">Фисташка</h4>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <p><b>340 ₽/кг</b></p>
             <button>В корзину</button>
           </li>
-          <li>
-            <img src="#" alt="Мороженное «Черника»">
-            <h3>Черника</h3>
-            <p></p>
-            <p></p>
+          <li class="product-card popular-card">
+            <img class="card-img popular-img" src="#" alt="Мороженое «Черника»">
+            <h4 class="card-title popular-title">Черника</h4>
+            <p>Крем-брюле с черничным джемом</p>
+            <p><b>330 ₽/кг</b></p>
             <button>В корзину</button>
           </li>
-          <li>
-            <img src="#" alt="Мороженное «Бабл-гам»">
-            <h3>Бабл-гам</h3>
-            <p></p>
-            <p></p>
+          <li class="product-card popular-card">
+            <img class="card-img popular-img" src="#" alt="Мороженое «Бабл-гам»">
+            <h4 class="card-title popular-title">Бабл-гам</h4>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <p><b>320 ₽/кг</b></p>
             <button>В корзину</button>
           </li>
         </ul>
@@ -185,17 +186,17 @@
       <section class="social footer-social">
         <ul class="social-list">
           <li class="social-item">
-            <a href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-item">
-            <a href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a href="#">
+            <a class="social-link" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>

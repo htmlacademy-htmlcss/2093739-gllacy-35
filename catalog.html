@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <!-- Хедер сайта, включает блок навигации с 2мя раздельными списками ссылок -->
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-list main-navigation">
+          <!-- Разделение списков двойным классом -->
+          <li class="navigation-item navigation-logo">
+            <!-- Логотип включен в список -->
+            <img class="navigation-logo-img" src="#" alt="Логотип «Глейси»">
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+        <ul class="navigation-list user-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Вход</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Основной контент страницы каталога -->
+    <main class="catalog-index">
+      <h1 class="visually-hidden">Каталог</h1> <!-- Скрытый заголовок 1го уровня -->
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"><u>Сливочное мороженое</u></a>
+        </li>
+      </ul>
+      <h2 class="catalog-title">Сливочное мороженое</h2>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <label for="sort-selector">Сортировка</label>
+            <select name="sort-selector" id="sort-selector">
+              <option value="popular">по популярности</option>
+            </select>
+          <label for="">
+            <input type="range">
+          </label>
+        </fieldset>
+      </form>
+    </main>
+    <!-- Футер -->
+    <footer class="page-footer"></footer>
+      <!-- "Социальный" блок с ссылками, двойной класс т.к. данный блок повторяется в мэйн-контенте страницы -->
+      <section class="social footer-social">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- Блок со списком - ссылками о "раскрытии информации" -->
+      <section class="information">
+        <ul class="information-list">
+          <li class="information-item">
+            <a class="information-link" href="#"><b>Для поставщиков</b></a>
+          </li>
+          <li class="information-item">
+            <a class="information-link" href="#">О производстве</a>
+          </li>
+          <li class="information-item">
+            <a class="information-link" href="#">Наши документы</a>
+            </li>
+          <li class="information-item">
+            <a class="information-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
+      <!-- Блок с "копирайтом" -->
+      <section class="copyright">
+        <a class="copyright-link" href="https://htmlacademy.ru/">
+          <img src="#" alt="Логотип «.html academy»">
+        </a>
+        <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -5,17 +5,17 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <!-- Хедер сайта. Включает блок навигации и блок с кнопками. Первый элемент нав блок а- это логотип, второй - заглушка с селектором. -->
+    <!-- Хедер сайта, включает блок навигации с 2мя раздельными списками ссылок -->
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-logo">
-            <img src="#" alt="Логотип «Глейси»">
+        <ul class="navigation-list main-navigation">
+          <!-- Разделение списков двойным классом -->
+          <li class="navigation-item navigation-logo">
+            <!-- Логотоип включен в список -->
+            <img class="navigation-logo-img" src="#" alt="Логотип «Глейси»">
           </li>
           <li class="navigation-item">
-            <select name="catalog-selector">
-              <option value="Каталог">Каталог</option>
-            </select>
+            <a class="navigation-link" href="#">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -24,22 +24,38 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <div class="header-menu">
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
-          <button class="header-button" type="button">Поиск</button>
-          <button class="header-button" type="button">Вход</button>
-          <button class="header-button" type="button">Корзина</button>
-        </div>
+        <ul class="navigation-list user-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="tel:+78005558628 ">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Вход</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main>
-    <!-- Первый смысловой блок основного содержимого, продуктовый слайдер. Внутри 4 блока, текстовый с заголовком первого уровня, блок изображений продуктов с кнопками-перелистывателями слайдера, блок с точками-"пулями" слайдера и блок социальный ссылок. -->
+    <main class="main-index">
+    <!-- Первый смысловой блок основного содержимого, "продуктовый слайдер" -->
+    <!--  Текстовый раздел слайдера с заголовком первого уровня -->
       <section class="products-slider">
         <div class="slider-text">
           <h1 class="slider-title">Нежный пломбир с клубничным джемом</h1>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-          <button class="slider-order">Заказать</button>
+          <button class="slider-order" type="button">Заказать</button>
         </div>
+        <!-- Раздел с изображениями слайдера и кнопками перелистывания -->
         <div class="slider-image">
           <button class="slider-previous" type="button">Предыдущий продукт</button>
           <img class="current-product" src="#" alt="Нежный пломбир с клубничным джемом">
@@ -47,9 +63,11 @@
             <img class="next-product" src="#" alt="Сливочное мороженое со вкусом банана">
             <img class="next-product" src="#" alt="Карамельный пломбир с маршмеллоу">
           </div>
-        <div class="slider-bullets">...
-        </div>
+        <!-- Блок с точками-"пулями", не отображается визуально, пока заглушка в виде троеточия -->
+        <div class="slider-bullets">...</div>
+        <!-- "Социальный" блок с ссылками -->
         <section class="social slider-social">
+          <!-- Двойной класс т.к. данный блок повторяется в футере -->
           <ul class="social-list">
             <li class="social-item">
               <a href="#">
@@ -69,63 +87,74 @@
           </ul>
         </section>
       </section>
-        <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел. Заголовок второго уровня и одинаковые блоки с заголовками третьего уровня и описаниями -->
+      <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел -->
+      <!-- 2 блока в данном разделе семантически взяты как article,
+      т.к. могут быть перенесены по отдельности в любое другое место сайта,
+      в качестве, например, отдельного рекламного обьявления -->
       <section class="products-gift">
         <h2 class="section-title">Заказывайте мороженое и получайте подарки!</h2>
         <article class="article-gift">
           <h3 class="gift-title">Малинка даром!</h3>
           <p class="gift-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно</p>
           <button class="gift-button">Хочу подарок</button>
-          <img src="#" alt="Малинка">
+          <img class="gift-img" src="#" alt="Малинка">
         </article>
         <article class="article-gift">
           <h3 class="gift-title">Маршмеллоу даром!</h3>
           <p class="gift-description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <button class="gift-button">Хочу подарок</button>
-          <img src="#" alt="Маршмеллоу">
+          <img class="gift-img" src="#" alt="Маршмеллоу">
         </article>
+      <!-- Блок с карточками популярных продуктов -->
       </section>
       <section class="products-popular">
-        <h2 class="popular"></h2>
-        <article class="">
-          <img src="#" alt="Малинка">
-          <h3></h3>
-          <p></p>
-          <p></p>
-          <button>В корзину</button>
-        </article>
-        <article>
-          <img src="#" alt="Фисташка">
-          <h3></h3>
-          <p></p>
-          <p></p>
-          <button></button>
-        </article>
-        <article>
-          <img src="#" alt="Черника">
-          <h3></h3>
-          <p></p>
-          <p></p>
-          <button></button>
-        </article>
-        <article>
-          <img src="#" alt="Бабл-гам">
-          <h3></h3>
-          <p></p>
-          <p></p>
-          <button></button>
-        </article>
-      </section>
+        <h2 class="popular">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul>
+          <li class="">
+            <img src="#" alt="Мороженое «Малинка»">
+            <h3>Малинка</h3>
+            <p></p>
+            <p></p>
+            <button>В корзину</button>
+          </li>
+          <li>
+            <img src="#" alt="Мороженое «Фисташка»">
+            <h3>Фисташка</h3>
+            <p></p>
+            <p></p>
+            <button>В корзину</button>
+          </li>
+          <li>
+            <img src="#" alt="Мороженное «Черника»">
+            <h3>Черника</h3>
+            <p></p>
+            <p></p>
+            <button>В корзину</button>
+          </li>
+          <li>
+            <img src="#" alt="Мороженное «Бабл-гам»">
+            <h3>Бабл-гам</h3>
+            <p></p>
+            <p></p>
+            <button>В корзину</button>
+          </li>
+        </ul>
+        </section>
+      <!-- Секция "преимуществ" -->
+      <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности.
+      Неконтентные <img class="advantage-img"> прописаны на данном этапе разметки со смысловыми альтами умышленно,
+      т.к. эти изображения по сути могут являться заголовками и передавать краткую смысловую нагрузку через скринридер,
+      доступность задумывается и соблюдается с ранних этапов разработки и реализации проекта -->
       <section class="products-advantages">
-        <p class="products-about">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <img src="#" alt="Мороженое">
-        <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
-        <img src="#" alt="Поставщики">
-        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-        <img src="#" alt="Натуральное сырье">
-        <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-        <img src="#" alt="Температура">
-        <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+        <h2 class="products-about">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <img class="advantage-img" src="#" alt="Собственное производство">
+        <p class="advantage-text">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+        <img class="advantage-img" src="#" alt="Проверенные поставщики">
+        <p class="advantage-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+        <img class="advantage-img" src="#" alt="Натуральное сырье">
+        <p class="advantage-text">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+        <img class="advantage-img" src="#" alt="Температурный режим">
+        <p class="advantage-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
       </section>
       <section>
         <article>
@@ -135,8 +164,24 @@
           <p></p>
         </article>
       </section>
+      <!-- Секция с информацией о доставке и формой -->
+      <section class="delivery">
+        <h2 class="delivery-title" >Доставка любимого мороженого на дом</h2>
+        <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <label for="delivery-date">Дата</label>
+          <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+          <label for="delivery-phone">Телефон</label>
+          <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+          <label for="delivery-adress">Адрес</label>
+          <input type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
+          <button type="submit" class="delivery-submit">Отправить</button>
+        </form>
+      </section>
     </main>
-    <footer>
+    <!-- Футер -->
+    <footer class="page-footer">
       <section class="social footer-social">
         <ul class="social-list">
           <li class="social-item">

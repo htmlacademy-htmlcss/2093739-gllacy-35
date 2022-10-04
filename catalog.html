@@ -48,43 +48,106 @@
     </header>
     <!-- Основной контент страницы каталога -->
     <main class="catalog-index">
-      <h1 class="visually-hidden">Каталог</h1>
-      <!-- Скрытый заголовок 1го уровня -->
-      <ul class="breadcrumbs">
-      <!-- "Хлебные крошки" -->
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link"><u>Сливочное мороженое</u></a>
-        </li>
-      </ul>
-      <h2 class="catalog-title">Сливочное мороженое</h2>
-      <!-- Форма с фильтрами для каталога -->
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="catalog-filter-group">
-          <legend>Сортировка:</legend>
-          <select name="sort-selector" id="sort-selector">
-            <option value="popular">по популярности</option>
-          </select>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend>Цена: 100 ₽ – 500 ₽</legend>
-          <input type="range" class="catalog-range" name="price-range"  id="price-range" min="0" max="1000" value="100">
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend>Жирность:</legend>
-          <input type="radio" name="radio-fatcontent" id="radio-fatcontent">
-        </fieldset>
-        <fieldset>
-          <legend>Наполнители:</legend>
-          <input type="checkbox" name="checkbox-filler" id="checkbox-filler">
-        </fieldset>
-        <button class="filter-accept-button" type="submit">Показать</button>
-      </form>
+      <header class="inner-header">
+        <h1 class="visually-hidden">Каталог</h1>
+        <!-- Скрытый заголовок 1го уровня -->
+        <ul class="breadcrumbs">
+        <!-- "Хлебные крошки" -->
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link"><u>Сливочное мороженое</u></a>
+          </li>
+        </ul>
+        <h2 class="catalog-title">Сливочное мороженое</h2>
+        <!-- Форма с фильтрами для каталога -->
+        <!-- Фильтры разделены <fieldset>, именование инпутов согласно типу применяемого фильтра -->
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <!-- Филдсет сортировки -->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Сортировка:</legend>
+            <select name="sort-selector" id="sort-selector">
+              <option value="popular">по популярности</option>
+            </select>
+          </fieldset>
+          <!-- Филдсет range сортировка по цене -->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+            <input type="range" class="catalog-range" name="price-range"  id="price-range" min="0" max="1000" value="100">
+          </fieldset>
+          <!-- Филдсет radio сортировка по жирности -->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="catalog-radio">
+                  <input type="radio" name="zero-fatness" id="zero-fatness">
+                  0%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="catalog-radio">
+                  <input type="radio" name="low-fatness" id="low-fatness" checked>
+                  до 10%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="catalog-radio">
+                  <input type="radio" name="medium-fatness" id="medium-fatness">
+                  до 30%
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="catalog-radio">
+                  <input type="radio" name="high-fatness" id="high-fatness">
+                    выше 30%
+                  </label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- Филдсет checkbox сортировки по наполнителю -->
+          <fieldset>
+            <legend class="catalog-filter-title">Наполнители:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="catalog-checkbox">
+                  <input type="checkbox" name="chocolate-fill" id="chocolate-fill" checked>
+                  шоколадные
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="catalog-checkbox">
+                  <input type="checkbox" name="sugar-fill" id="sugar-fill" checked>
+                  сахарные посыпки
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="catalog-checkbox">
+                  <input type="checkbox" name="fruit-fill" id="fruit-fill">
+                  фрукты
+                </label>
+              </li>
+              <li>
+                <label class="catalog-filter-item">
+                  <input type="checkbox" name="syrup-fill" id="syrup-fill">
+                  сиропы
+                </label>
+              </li>
+              <li>
+                <label class="catalog-filter-item">
+                  <input type="checkbox" name="jam-fill" id="jam-fill">
+                  джемы
+                  </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-accept-button" type="submit">Приименить</button>
+        </form>
+      </header>
       <!-- Основной блок каталога с отсортированным содержимым,
       карточки товаров идентичны карточкам с главной страницы -->
       <section class="products-catalog">
@@ -177,6 +240,7 @@
           </li>
         </ul>
       </section>
+      <!-- "Пагинация" -->
       <section class="pagination">
         <button class="button pagination-show-more" type="button">Показать ещё</button>
         <ul class="pagination-list">
@@ -247,7 +311,7 @@
           </li>
         </ul>
       </section>
-      <!-- Блок с "копирайтом" -->
+      <!-- Блок с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
       <section class="copyright">
         <a class="copyright-link" href="https://htmlacademy.ru/">
           <img src="#" alt="Логотип «.html academy»">

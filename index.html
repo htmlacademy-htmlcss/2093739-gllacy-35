@@ -8,9 +8,8 @@
     <!-- Хедер сайта, включает блок навигации с 2мя раздельными списками ссылок -->
     <header class="page-header">
       <nav class="navigation">
-        <img class="navigation-logo-img" src="#" alt="Логотип «Глейси»">
-        <ul class="navigation-list main-navigation">
-          <!-- Разделение списков двойным классом -->
+        <img class="header-logo-img" src="#" alt="Логотип «Глейси»">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог</a>
           </li>
@@ -21,27 +20,27 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <ul class="navigation-list user-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+      </nav>
+      <ul class="user-menu">
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
               <span class="visually-hidden">Вход</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
         </ul>
-      </nav>
     </header>
     <!-- Основной контент главной страницы -->
     <main class="main-index">
@@ -66,26 +65,25 @@
           <li class="bullet-current"></li>
           <li class="bullet"></li>
           <li class="bullet"></li>
-        <!-- "Социальный" блок с ссылками, двойной класс т.к. данный блок повторяется в футере -->
-        <section class="social slider-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        </ul>
+        <!-- "Социальный" список с ссылками, двойной класс т.к. данный список повторяется в футере -->
+        <ul class="social-list slider-social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
       </section>
       <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел -->
       <!-- 2 блока в данном разделе семантически взяты как article,
@@ -143,20 +141,15 @@
         </ul>
         </section>
       <!-- Блок "преимуществ" -->
-      <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности.
-      Неконтентные <img class="advantage-img"> прописаны на данном этапе разметки со смысловыми альтами умышленно,
-      т.к. эти изображения по сути могут являться заголовками и передавать краткую смысловую нагрузку через скринридер,
-      доступность задумывается и соблюдается с ранних этапов разработки и реализации проекта -->
+      <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности -->
       <section class="products-advantages">
         <h2 class="products-about">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <img class="advantage-img" src="#" alt="Собственное производство">
-        <p class="advantage-text">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
-        <img class="advantage-img" src="#" alt="Проверенные поставщики">
-        <p class="advantage-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-        <img class="advantage-img" src="#" alt="Натуральное сырье">
-        <p class="advantage-text">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-        <img class="advantage-img" src="#" alt="Температурный режим">
-        <p class="advantage-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+        <ul class="advantage-list">
+          <li class="advantage-item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="advantage-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="advantage-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+          <li class="advantage-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+        </ul>
       </section>
       <!-- Блок с новыми новостяи из блога -->
       <section class="blog">
@@ -198,50 +191,46 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <!-- "Социальный" блок с ссылками, двойной класс т.к. данный блок повторяется в мэйн-контенте страницы -->
-      <section class="social footer-social">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social-item">
+      <!--Двойной класс т.к. данный блок повторяется в мэйн-контенте страницы -->
+      <ul class="social-list footer-social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social-item">
             <a class="social-link" href="#">
               <span class="visually-hidden">ВКонтакте</span>
-            </a>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Список - ссылки о "раскрытии информации" -->
+      <ul class="information-list">
+        <li class="information-item">
+          <a class="information-link" href="#"><b>Для поставщиков</b></a>
+        </li>
+        <li class="information-item">
+          <a class="information-link" href="#">О производстве</a>
+        </li>
+        <li class="information-item">
+          <a class="information-link" href="#">Наши документы</a>
           </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- Блок со списком - ссылками о "раскрытии информации" -->
-      <section class="information">
-        <ul class="information-list">
-          <li class="information-item">
-            <a class="information-link" href="#"><b>Для поставщиков</b></a>
-          </li>
-          <li class="information-item">
-            <a class="information-link" href="#">О производстве</a>
-          </li>
-          <li class="information-item">
-            <a class="information-link" href="#">Наши документы</a>
-            </li>
-          <li class="information-item">
-            <a class="information-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      </section>
-      <!-- Блок с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
-      <section class="copyright">
+        <li class="information-item">
+          <a class="information-link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <!-- Изображение и ссылка с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
+      <div class="copyright">
         <a class="copyright-link" href="https://htmlacademy.ru/">
           <img src="#" alt="Логотип «.html academy»">
         </a>
         <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -7,8 +7,8 @@
   <body>
     <!-- Хедер сайта -->
     <header class="page-header">
+      <img class="header-logo-img" src="#" alt="Логотип «Глейси»">
       <nav class="navigation">
-        <img class="header-logo-img" src="#" alt="Логотип «Глейси»">
         <!-- Главная навигация -->
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -57,22 +57,32 @@
         </div>
         <!-- Раздел с изображениями слайдера и кнопками перелистывания -->
         <div class="slider-image">
-          <button class="slider-previous" type="button">Предыдущий продукт</button>
-          <button class="slider-next" type="button">Следующий продукт</button>
-          <img class="product-current" src="#" alt="Нежный пломбир с клубничным джемом">
-          <img class="product-inactive" src="#" alt="Сливочное мороженое со вкусом банана">
-          <img class="product-inactive" src="#" alt="Карамельный пломбир с маршмеллоу">
+            <button class="slider-previous" type="button">
+              <span class="visually-hidden">Предыдущий продукт</span>
+            </button>
+            <button class="slider-next" type="button">
+              <span class="visually-hidden">Следующий продукт</span>
+            </button>
+            <img class="product-current" src="#" alt="Нежный пломбир с клубничным джемом">
+            <img class="product-inactive" src="#" alt="Сливочное мороженое со вкусом банана">
+            <img class="product-inactive" src="#" alt="Карамельный пломбир с маршмеллоу">
         </div>
         <!-- Блок с точками-"пулями" -->
         <ul class="slider-bullets">
           <li class="bullet-current">
-            <button class="slide-current" type="button">1</button>
+            <button class="slide-current" type="button">
+              <span class="visually-hidden">1 слайд</span>
+            </button>
           </li>
           <li class="bullet-inactive">
-            <button class="slide-inactive" type="button">2</button>
+            <button class="slide-inactive" type="button">
+              <span class="visually-hidden">2 слайд</span>
+            </button>
           </li>
           <li class="bullet-inactive">
-            <button class="slide-inactive" type="button">3</button>
+            <button class="slide-inactive" type="button">
+              <span class="visually-hidden">3 слайд</span>
+            </button>
           </li>
         </ul>
         <!-- "Социальный" список с ссылками, двойной класс т.к. данный список повторяется в футере -->

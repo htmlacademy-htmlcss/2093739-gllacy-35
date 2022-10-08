@@ -6,15 +6,12 @@
     <base href="https://htmlacademy-htmlcss.github.io/2093739-gllacy-35/2/">
 </head>
   <body>
-    <!-- Хедер сайта, включает блок навигации с 2мя раздельными списками ссылок -->
+    <!-- Хедер сайта -->
     <header class="page-header">
+      <img class="header-logo-img" src="#" alt="Логотип «Глейси»">
       <nav class="navigation">
-        <ul class="navigation-list main-navigation">
-          <!-- Разделение списков двойным классом -->
-          <li class="navigation-item navigation-logo">
-            <!-- Логотип включен в список -->
-            <img class="navigation-logo-img" src="#" alt="Логотип «Глейси»">
-          </li>
+        <!-- Главная навигация -->
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог</a>
           </li>
@@ -25,73 +22,93 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <ul class="navigation-list user-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Вход</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Корзина</span>
-            </a>
-          </li>
-        </ul>
       </nav>
+      <!-- Второй блок в хедере, стандартное для таких сайтов меню "поиск-вход-корзина"  -->
+      <ul class="user-menu">
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="tel:+78005558628">+7 800 555-86-28</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <span class="visually-hidden">Вход</span>
+          </a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <span class="visually-hidden">Корзина</span>
+          </a>
+        </li>
+      </ul>
     </header>
-    <!-- Основной контент главной страницы -->
+    <!-- Основной контент главной страницы, скрытый <h1> -->
     <main class="main-index">
+      <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
     <!-- Первый смысловой блок основного содержимого, "продуктовый слайдер" -->
-    <!--  Текстовый раздел слайдера с заголовком первого уровня -->
+    <!-- Текстовый раздел слайдера с <h2> -->
       <section class="products-slider">
         <div class="slider-text">
-          <h1 class="slider-title">Нежный пломбир с клубничным джемом</h1>
+          <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="slider-order" type="button">Заказать</button>
         </div>
         <!-- Раздел с изображениями слайдера и кнопками перелистывания -->
         <div class="slider-image">
-          <button class="slider-previous" type="button">Предыдущий продукт</button>
-          <img class="current-product" src="#" alt="Нежный пломбир с клубничным джемом">
-          <button class="slider-next" type="button">Следующий продукт</button>
-            <img class="next-product" src="#" alt="Сливочное мороженое со вкусом банана">
-            <img class="next-product" src="#" alt="Карамельный пломбир с маршмеллоу">
-          </div>
-        <!-- Блок с точками-"пулями", не отображается визуально, пока заглушка в виде троеточия -->
-        <div class="slider-bullets">...</div>
-        <!-- "Социальный" блок с ссылками, двойной класс т.к. данный блок повторяется в футере -->
-        <section class="social slider-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+            <button class="slider-previous" type="button">
+              <span class="visually-hidden">Предыдущий продукт</span>
+            </button>
+            <button class="slider-next" type="button">
+              <span class="visually-hidden">Следующий продукт</span>
+            </button>
+            <img class="product-current" src="#" alt="Нежный пломбир с клубничным джемом">
+            <img class="product-inactive" src="#" alt="Сливочное мороженое со вкусом банана">
+            <img class="product-inactive" src="#" alt="Карамельный пломбир с маршмеллоу">
+        </div>
+        <!-- Блок с точками-"пулями" -->
+        <ul class="slider-bullets">
+          <li class="bullet-current">
+            <button class="slide-current" type="button">
+              <span class="visually-hidden">1 слайд</span>
+            </button>
+          </li>
+          <li class="bullet-inactive">
+            <button class="slide-inactive" type="button">
+              <span class="visually-hidden">2 слайд</span>
+            </button>
+          </li>
+          <li class="bullet-inactive">
+            <button class="slide-inactive" type="button">
+              <span class="visually-hidden">3 слайд</span>
+            </button>
+          </li>
+        </ul>
+        <!-- "Социальный" список с ссылками, двойной класс т.к. данный список повторяется в футере -->
+        <ul class="social-list slider-social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
       </section>
-      <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел -->
-      <!-- 2 блока в данном разделе семантически взяты как article,
-      т.к. могут быть перенесены по отдельности в любое другое место сайта,
-      в качестве, например, отдельного рекламного обьявления -->
+      <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел,
+      2 блока в данном разделе семантически взяты как <article>, т.к. могут быть
+      перенесены по отдельности в любое другое место сайта, в качестве, например,
+      отдельного рекламного обьявления, заголовки <h3> -->
       <section class="products-gift">
         <h2 class="section-title">Заказывайте мороженое и получайте подарки!</h2>
         <article class="article-gift">
@@ -107,36 +124,34 @@
           <img class="gift-img" src="#" alt="Маршмеллоу">
         </article>
       </section>
-      <!-- Блок с карточками популярных продуктов -->
-      <!-- Скрытый заголовок 3го уровня, двойные классы <ul> и <li> для страницы каталога -->
+      <!-- Блок с карточками популярных продуктов, двойные классы для страницы каталога -->
       <section class="products-popular">
         <h2 class="section-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <h3 class="visually-hidden">Популярные вкусы</h3>
         <ul class="products-list popular-list">
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Малинка»">
-            <h4 class="card-title">Малинка</h4>
+            <h3 class="card-title">Малинка</h3>
             <p class="card-description">Сливочное мороженое с малиновым джемом</p>
             <p class="card-price"><b>310 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Фисташка»">
-            <h4 class="card-title">Фисташка</h4>
+            <h3 class="card-title">Фисташка</h3>
             <p class="card-description">Фисташковый пломбир с кусочками шоколада</p>
             <p class="card-price"><b>340 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Черника»">
-            <h4 class="card-title">Черника</h4>
+            <h3 class="card-title">Черника</h3>
             <p class="card-description">Крем-брюле с черничным джемом</p>
             <p class="card-price"><b>330 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Бабл-гам»">
-            <h4 class="card-title">Бабл-гам</h4>
+            <h3 class="card-title">Бабл-гам</h3>
             <p class="card-description">Ванильный пломбир со сладкой посыпкой</p>
             <p class="card-price"><b>320 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
@@ -144,20 +159,15 @@
         </ul>
         </section>
       <!-- Блок "преимуществ" -->
-      <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности.
-      Неконтентные <img class="advantage-img"> прописаны на данном этапе разметки со смысловыми альтами умышленно,
-      т.к. эти изображения по сути могут являться заголовками и передавать краткую смысловую нагрузку через скринридер,
-      доступность задумывается и соблюдается с ранних этапов разработки и реализации проекта -->
+      <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности -->
       <section class="products-advantages">
         <h2 class="products-about">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <img class="advantage-img" src="#" alt="Собственное производство">
-        <p class="advantage-text">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
-        <img class="advantage-img" src="#" alt="Проверенные поставщики">
-        <p class="advantage-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-        <img class="advantage-img" src="#" alt="Натуральное сырье">
-        <p class="advantage-text">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-        <img class="advantage-img" src="#" alt="Температурный режим">
-        <p class="advantage-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+        <ul class="advantage-list">
+          <li class="advantage-item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="advantage-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="advantage-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+          <li class="advantage-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+        </ul>
       </section>
       <!-- Блок с новыми новостяи из блога -->
       <section class="blog">
@@ -194,57 +204,51 @@
         <p class="contacts-description">Для заказов по телефону:</p>
         <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="phone-description">(с 10 до 20 ежедневно)</p>
-        <a class="feedback-link" href="#">
-          <span class="visually-hidden">Форма обратной связи</span>
-        </a>
+        <a class="feedback-link" href="#">Форма обратной связи</a>
       </section>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <!-- "Социальный" блок с ссылками, двойной класс т.к. данный блок повторяется в мэйн-контенте страницы -->
-      <section class="social footer-social">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social-item">
+      <!--Список с "социальными" ссылками -->
+      <ul class="social-list footer-social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social-item">
             <a class="social-link" href="#">
               <span class="visually-hidden">ВКонтакте</span>
-            </a>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Список - ссылки о "раскрытии информации" -->
+      <ul class="information-list">
+        <li class="information-item">
+          <a class="information-link" href="#"><b>Для поставщиков</b></a>
+        </li>
+        <li class="information-item">
+          <a class="information-link" href="#">О производстве</a>
+        </li>
+        <li class="information-item">
+          <a class="information-link" href="#">Наши документы</a>
           </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- Блок со списком - ссылками о "раскрытии информации" -->
-      <section class="information">
-        <ul class="information-list">
-          <li class="information-item">
-            <a class="information-link" href="#"><b>Для поставщиков</b></a>
-          </li>
-          <li class="information-item">
-            <a class="information-link" href="#">О производстве</a>
-          </li>
-          <li class="information-item">
-            <a class="information-link" href="#">Наши документы</a>
-            </li>
-          <li class="information-item">
-            <a class="information-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      </section>
-      <!-- Блок с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
-      <section class="copyright">
+        <li class="information-item">
+          <a class="information-link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <!-- Изображение и ссылка с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
+      <div class="copyright">
         <a class="copyright-link" href="https://htmlacademy.ru/">
           <img src="#" alt="Логотип «.html academy»">
         </a>
         <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

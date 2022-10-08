@@ -5,10 +5,11 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <!-- Хедер сайта, включает блок навигации с 2мя раздельными списками ссылок -->
+    <!-- Хедер сайта -->
     <header class="page-header">
       <nav class="navigation">
         <img class="header-logo-img" src="#" alt="Логотип «Глейси»">
+        <!-- Главная навигация -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог</a>
@@ -21,6 +22,7 @@
           </li>
         </ul>
       </nav>
+      <!-- Второй блок в хедере, стандартное для таких сайтов меню "поиск-вход-корзина"  -->
       <ul class="user-menu">
         <li class="user-menu-item">
           <a class="user-menu-link" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -29,26 +31,27 @@
           <a class="user-menu-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
-              <span class="visually-hidden">Вход</span>
-            </a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
-              <span class="visually-hidden">Корзина</span>
-            </a>
-          </li>
-        </ul>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <span class="visually-hidden">Вход</span>
+          </a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <span class="visually-hidden">Корзина</span>
+          </a>
+        </li>
+      </ul>
     </header>
-    <!-- Основной контент главной страницы -->
+    <!-- Основной контент главной страницы, скрытый <h1> -->
     <main class="main-index">
+      <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
     <!-- Первый смысловой блок основного содержимого, "продуктовый слайдер" -->
-    <!--  Текстовый раздел слайдера с заголовком первого уровня -->
+    <!-- Текстовый раздел слайдера с <h2> -->
       <section class="products-slider">
         <div class="slider-text">
-          <h1 class="slider-title">Нежный пломбир с клубничным джемом</h1>
+          <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="slider-order" type="button">Заказать</button>
         </div>
@@ -56,15 +59,21 @@
         <div class="slider-image">
           <button class="slider-previous" type="button">Предыдущий продукт</button>
           <button class="slider-next" type="button">Следующий продукт</button>
-          <img class="current-product" src="#" alt="Нежный пломбир с клубничным джемом">
-          <img class="next-product" src="#" alt="Сливочное мороженое со вкусом банана">
-          <img class="next-product" src="#" alt="Карамельный пломбир с маршмеллоу">
+          <img class="product-current" src="#" alt="Нежный пломбир с клубничным джемом">
+          <img class="product-inactive" src="#" alt="Сливочное мороженое со вкусом банана">
+          <img class="product-inactive" src="#" alt="Карамельный пломбир с маршмеллоу">
         </div>
         <!-- Блок с точками-"пулями" -->
         <ul class="slider-bullets">
-          <li class="bullet-current"></li>
-          <li class="bullet"></li>
-          <li class="bullet"></li>
+          <li class="bullet-current">
+            <button class="slide-current" type="button">1</button>
+          </li>
+          <li class="bullet-inactive">
+            <button class="slide-inactive" type="button">2</button>
+          </li>
+          <li class="bullet-inactive">
+            <button class="slide-inactive" type="button">3</button>
+          </li>
         </ul>
         <!-- "Социальный" список с ссылками, двойной класс т.к. данный список повторяется в футере -->
         <ul class="social-list slider-social-list">
@@ -85,10 +94,10 @@
           </li>
         </ul>
       </section>
-      <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел -->
-      <!-- 2 блока в данном разделе семантически взяты как article,
-      т.к. могут быть перенесены по отдельности в любое другое место сайта,
-      в качестве, например, отдельного рекламного обьявления -->
+      <!-- Второй смысловой блок, "бонусный" или "подарочный" раздел,
+      2 блока в данном разделе семантически взяты как <article>, т.к. могут быть
+      перенесены по отдельности в любое другое место сайта, в качестве, например,
+      отдельного рекламного обьявления, заголовки <h3> -->
       <section class="products-gift">
         <h2 class="section-title">Заказывайте мороженое и получайте подарки!</h2>
         <article class="article-gift">
@@ -104,36 +113,34 @@
           <img class="gift-img" src="#" alt="Маршмеллоу">
         </article>
       </section>
-      <!-- Блок с карточками популярных продуктов -->
-      <!-- Скрытый заголовок 3го уровня, двойные классы <ul> и <li> для страницы каталога -->
+      <!-- Блок с карточками популярных продуктов, двойные классы для страницы каталога -->
       <section class="products-popular">
         <h2 class="section-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <h3 class="visually-hidden">Популярные вкусы</h3>
         <ul class="products-list popular-list">
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Малинка»">
-            <h4 class="card-title">Малинка</h4>
+            <h3 class="card-title">Малинка</h3>
             <p class="card-description">Сливочное мороженое с малиновым джемом</p>
             <p class="card-price"><b>310 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Фисташка»">
-            <h4 class="card-title">Фисташка</h4>
+            <h3 class="card-title">Фисташка</h3>
             <p class="card-description">Фисташковый пломбир с кусочками шоколада</p>
             <p class="card-price"><b>340 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Черника»">
-            <h4 class="card-title">Черника</h4>
+            <h3 class="card-title">Черника</h3>
             <p class="card-description">Крем-брюле с черничным джемом</p>
             <p class="card-price"><b>330 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="#" alt="Мороженое «Бабл-гам»">
-            <h4 class="card-title">Бабл-гам</h4>
+            <h3 class="card-title">Бабл-гам</h3>
             <p class="card-description">Ванильный пломбир со сладкой посыпкой</p>
             <p class="card-price"><b>320 ₽/кг</b></p>
             <button class="buy-button">В корзину</button>
@@ -191,7 +198,7 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <!--Двойной класс т.к. данный блок повторяется в мэйн-контенте страницы -->
+      <!--Список с "социальными" ссылками -->
       <ul class="social-list footer-social-list">
         <li class="social-item">
           <a class="social-link" href="#">

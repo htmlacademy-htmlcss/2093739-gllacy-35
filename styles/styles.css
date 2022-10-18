@@ -58,6 +58,7 @@ body {
 }
 
 /* === Index page === */
+
 /* Products-slider */
 
 .slider-title {
@@ -110,6 +111,10 @@ body {
 
 /* Popular products section (text styles in cards same in index page and catalog page)  */
 
+.product-card {
+  background-color: #FCFCFC;
+}
+
 .card-title {
   font-weight: 700;
   font-size: 20px;
@@ -130,6 +135,8 @@ body {
 
 .products-advantages {
   background-image: url("../images/advantages-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .products-about {
@@ -143,6 +150,8 @@ body {
 
 .blog {
   background-image: url("../images/blog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .blog-title {
@@ -155,6 +164,8 @@ body {
 
 .newsletter {
   background-image: url("../images/newsletter-background.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .newsletter-submit {
@@ -171,6 +182,8 @@ body {
 
 .delivery {
   background-image: url("../images/delivery-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .delivery-title {
@@ -201,8 +214,13 @@ body {
 
 .contacts {
   background-image: url("../images/contacts-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
+.contacts-container {
+  background-color: #FCFCFC;
+}
 .address-description {
   font-style: normal;
   font-weight: 700;
@@ -232,6 +250,7 @@ body {
 }
 
 /* === Catalog page ===*/
+
 /* Catalog header  */
 
 .catalog-header {

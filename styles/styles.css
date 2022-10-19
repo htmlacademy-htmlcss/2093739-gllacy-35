@@ -45,11 +45,30 @@ body {
 /* Header */
 
 .page-header {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
   color: inherit;
   background-color: inherit;
 }
 
+.header-logo-img {
+  width: 137px;
+  margin-right: 16px;
+}
+
 /* Navigation */
+
+.navigation-list, .user-menu {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu {
+  max-width: 450px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  margin-left: 0;
+}
 
 .navigation-link, .user-menu-link {
   font-family: Inter, sans-serif;
@@ -69,6 +88,11 @@ body {
 
 .main-container {
   flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 /* Products-slider */

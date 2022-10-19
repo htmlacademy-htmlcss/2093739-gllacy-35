@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Хедер сайта -->
@@ -162,7 +163,7 @@
       <!-- Блок "преимуществ" -->
       <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности -->
       <section class="products-advantages">
-        <h2 class="products-about">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <h2 class="section-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantage-list">
           <li class="advantage-item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
           <li class="advantage-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
@@ -185,27 +186,29 @@
       </section>
       <!-- Блок с информацией о доставке и формой -->
       <section class="delivery">
-        <h2 class="delivery-title" >Доставка любимого мороженого на дом</h2>
+        <h2 class="section-title delivery-title">Доставка любимого мороженого на дом</h2>
         <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <label for="delivery-date">Дата</label>
+          <label class="delivery-label" for="delivery-date">Дата</label>
           <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-          <label for="delivery-phone">Телефон</label>
+          <label class="delivery-label" for="delivery-phone">Телефон</label>
           <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
-          <label for="delivery-adress">Адрес</label>
+          <label class="delivery-label" for="delivery-adress">Адрес</label>
           <input type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
           <button class="submit delivery-submit" type="submit" >Отправить</button>
         </form>
       </section>
       <!-- Блок с контактной информацией -->
       <section class="contacts">
-        <p class="contacts-description">Адрес главного офиса и офлайн-магазина:</p>
-        <address class="adress-desription">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <p class="contacts-description">Для заказов по телефону:</p>
-        <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <p class="phone-description">(с 10 до 20 ежедневно)</p>
-        <a class="feedback-link" href="#">Форма обратной связи</a>
+        <div class="contacts-container">
+          <p class="contacts-description">Адрес главного офиса и офлайн-магазина:</p>
+          <address class="address-description">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
+          <p class="contacts-description">Для заказов по телефону:</p>
+          <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <p class="phone-description">(с 10 до 20 ежедневно)</p>
+          <a class="feedback-link" href="#">Форма обратной связи</a>
+      </div>
       </section>
     </main>
     <!-- Футер -->

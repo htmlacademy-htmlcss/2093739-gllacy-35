@@ -47,9 +47,10 @@
     </header>
     <!-- Основной контент главной страницы, скрытый <h1> -->
     <main class="main-container main-index">
+      <!-- Контенер для центрирования основного контента страницы -->
       <div class="page-container">
-        <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
-         <!-- Первый смысловой блок основного содержимого, "продуктовый слайдер" -->
+        <h1 class="visually-hidden" hidden>Магазин мороженного Глейси</h1>
+         <!-- Первый контентный блок, "продуктовый слайдер" -->
          <!-- Текстовый раздел слайдера с <h2> -->
         <section class="products-slider">
           <div class="slider-current">
@@ -113,23 +114,25 @@
         перенесены по отдельности в любое другое место сайта, в качестве, например,
         отдельного рекламного обьявления, заголовки <h3> -->
         <section class="products-gift">
-          <h2 class="section-title">Заказывайте мороженое и получайте подарки!</h2>
-          <article class="article-gift">
-            <h3 class="gift-title">Малинка даром!</h3>
-            <p class="gift-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно</p>
-            <button class="gift-button">Хочу подарок</button>
-            <img class="gift-img" src="images/raspberry-gift.png" width="219" height="268" alt="Малинка">
-          </article>
-          <article class="article-gift">
-            <h3 class="gift-title">Маршмеллоу даром!</h3>
-            <p class="gift-description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <button class="gift-button">Хочу подарок</button>
-            <img class="gift-img" src="images/zefir-gift.png" width="219" height="268" alt="Маршмеллоу">
-          </article>
+          <h2 class="section-title products-gift-title">Заказывайте мороженое и получайте подарки!</h2>
+          <div class="gift-container">
+            <article class="article-gift">
+              <h3 class="gift-title">Малинка даром!</h3>
+              <p class="gift-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно</p>
+              <button class="gift-button">Хочу подарок</button>
+              <img class="gift-img" src="images/raspberry-gift.png" width="219" height="268" alt="Малинка">
+            </article>
+            <article class="article-gift">
+              <h3 class="gift-title">Маршмеллоу даром!</h3>
+              <p class="gift-description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              <button class="gift-button">Хочу подарок</button>
+              <img class="gift-img" src="images/zefir-gift.png" width="219" height="268" alt="Маршмеллоу">
+            </article>
+          </div>
         </section>
         <!-- Блок с карточками популярных продуктов, двойные классы для страницы каталога -->
         <section class="products-popular">
-          <h2 class="section-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+          <h2 class="section-title products-popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
           <ul class="products-list popular-list">
             <li class="product-card popular-card">
               <img class="card-img" src="images/catalog/paspberry.jpg" width="168" height="168" alt="Мороженое «Малинка»">
@@ -173,18 +176,20 @@
           </ul>
         </section>
         <!-- Блок с новыми новостяи из блога -->
-        <section class="blog">
-          <p class="blog-news">Новое в нашем блоге</p>
-          <h3 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h3>
-        </section>
-        <!-- Блок для подписки на рассылку с полем ввода почты -->
-        <section class="newsletter">
-          <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" id="newsletter-mail" name="newsletter-mail" placeholder="email@example.com" required>
-            <button class="submit newsletter-submit" type="submit">Отправить</button>
-          </form>
-        </section>
+        <div class="news-container">
+          <section class="blog">
+            <p class="blog-news">Новое в нашем блоге</p>
+            <h3 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h3>
+          </section>
+          <!-- Блок для подписки на рассылку с полем ввода почты -->
+          <section class="newsletter">
+            <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" id="newsletter-mail" name="newsletter-mail" placeholder="email@example.com" required>
+              <button class="submit newsletter-submit" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
         <!-- Блок с информацией о доставке и формой -->
         <section class="delivery">
           <h2 class="section-title delivery-title">Доставка любимого мороженого на дом</h2>
@@ -215,46 +220,48 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <!--Список с "социальными" ссылками -->
-      <ul class="social-list footer-social-list">
-        <li class="social-item">
-          <a class="social-link" href="#">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="social-item">
+      <div class="page-footer-container">
+        <!--Список с "социальными" ссылками -->
+        <ul class="social-list footer-social-list">
+          <li class="social-item">
             <a class="social-link" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="#">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-      </ul>
-      <!-- Список - ссылки о "раскрытии информации" -->
-      <ul class="information-list">
-        <li class="information-item">
-          <a class="information-link" href="#"><b>Для поставщиков</b></a>
-        </li>
-        <li class="information-item">
-          <a class="information-link" href="#">О производстве</a>
-        </li>
-        <li class="information-item">
-          <a class="information-link" href="#">Наши документы</a>
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
-        <li class="information-item">
-          <a class="information-link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-      <!-- Изображение и ссылка с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
-      <div class="copyright">
-        <a class="copyright-link" href="https://htmlacademy.ru/">
-          <img src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип «.html academy»">
-        </a>
-        <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-      </div>
+          <li class="social-item">
+              <a class="social-link" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Список - ссылки о "раскрытии информации" -->
+        <ul class="information-list">
+          <li class="information-item">
+            <a class="information-link" href="#"><b>Для поставщиков</b></a>
+          </li>
+          <li class="information-item">
+            <a class="information-link" href="#">О производстве</a>
+          </li>
+          <li class="information-item">
+            <a class="information-link" href="#">Наши документы</a>
+            </li>
+          <li class="information-item">
+            <a class="information-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+        <!-- Изображение и ссылка с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
+        <div class="copyright">
+          <a class="copyright-link" href="https://htmlacademy.ru/">
+            <img src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип «.html academy»">
+          </a>
+          <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        </div>
+    </div>
     </footer>
   </body>
 </html>

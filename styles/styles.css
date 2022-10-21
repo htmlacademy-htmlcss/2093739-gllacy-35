@@ -87,12 +87,9 @@ body {
 /* === Index page === */
 
 .main-container {
-  flex-grow: 1;
-}
-
-.page-container {
   width: 1170px;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
 /* Products-slider */

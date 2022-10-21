@@ -24,9 +24,17 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 /* Body */
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -37,11 +45,30 @@ body {
 /* Header */
 
 .page-header {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
   color: inherit;
   background-color: inherit;
 }
 
+.header-logo-img {
+  width: 137px;
+  margin-right: 16px;
+}
+
 /* Navigation */
+
+.navigation-list, .user-menu {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu {
+  max-width: 450px;
+  margin-left: 0;
+}
 
 .navigation-link, .user-menu-link {
   font-family: Inter, sans-serif;
@@ -58,6 +85,15 @@ body {
 }
 
 /* === Index page === */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
 
 /* Products-slider */
 
@@ -90,8 +126,20 @@ body {
   text-align: center;
 }
 
+.products-gift-title {
+  width: 434px;
+  margin: 0 auto;
+}
+
+.gift-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 .article-gift {
   background-color: #FF7799;
+  width: 570px;
 }
 
 .gift-title {
@@ -111,8 +159,21 @@ body {
 
 /* Popular products section (text styles in cards same in index page and catalog page)  */
 
+.products-popular-title {
+  width: 527px;
+  margin: 0 auto;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .product-card {
   background-color: #FCFCFC;
+  width: 270px;
 }
 
 .card-title {
@@ -146,9 +207,19 @@ body {
   text-align: center;
   }
 
+/* Contaner for blog + newsletter */
+
+.news-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 /* Blog section */
 
 .blog {
+  width: 570px;
   background-image: url("../images/blog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -163,6 +234,7 @@ body {
 /* Newsletter section */
 
 .newsletter {
+  width: 570px;
   background-image: url("../images/newsletter-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -181,6 +253,7 @@ body {
 /* Delivery section */
 
 .delivery {
+
   background-image: url("../images/delivery-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -207,7 +280,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-
 }
 
 /* Contacts section */
@@ -287,6 +359,12 @@ body {
   text-align: center;
 }
 
+/* Catalog */
+
+.products-catalog {
+  display: flex;
+}
+
 /* Pagination */
 
 .pagination-show-more {
@@ -310,13 +388,34 @@ body {
   background-color: #FCFCFC;
 }
 
-/* Footer */
+/* === Footer === */
+
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-social-list, .information-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-list {
+  width: 104px;
+  margin-right: 300px;
+}
 
 .information-link {
   color: inherit;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.copyright {
+  min-width: 220px;
+  margin-left: auto;
 }
 
 .copyright-text {

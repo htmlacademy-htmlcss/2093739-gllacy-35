@@ -168,7 +168,6 @@ section:last-child {
 .products-gift-title {
   width: 434px;
   margin: 0 auto 55px;
-
 }
 
 .gift-container {
@@ -177,30 +176,38 @@ section:last-child {
   margin: 0;
   padding: 0;
 }
+
 .article-gift {
-  box-sizing: border-box;
+  background-image: url("../images/raspberry-gift.png");
+  background-position: right;
+  background-repeat: no-repeat;
   background-color: #FF7799;
+  box-sizing: border-box;
   width: 570px;
   padding: 36px;
-  padding-right: 0;
+  padding-right: 206px;
 }
 
-.gift-info {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  width: 328px;
+.article-gift:nth-child(2) {
+  background-image: url("../images/zefir-gift.png");
 }
 
 .gift-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
+.gift-description {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 .gift-button {
-  width: 170px;
+  border: 0;
+  padding: 12px 32px;
   background: #FCFCFC;
   font-family: Inter, sans-serif;
   font-weight: 700;

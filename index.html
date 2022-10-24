@@ -47,7 +47,7 @@
     </header>
     <!-- Основной контент главной страницы, скрытый <h1> -->
     <main class="main-container main-index">
-      <h1 class="visually-hidden" hidden>Магазин мороженного Глейси</h1>
+      <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
         <!-- Первый контентный блок, "продуктовый слайдер" -->
         <!-- Текстовый раздел слайдера с <h2> -->
       <section class="products-slider">
@@ -115,14 +115,16 @@
         <h2 class="section-title products-gift-title">Заказывайте мороженое и получайте подарки!</h2>
         <div class="gift-container">
           <article class="article-gift">
+            <div class="gift-info">
             <h3 class="gift-title">Малинка даром!</h3>
             <p class="gift-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно</p>
             <button class="gift-button">Хочу подарок</button>
-            <img class="gift-img" src="images/raspberry-gift.png" width="219" height="268" alt="Малинка">
+
+            </div><img class="gift-img" src="images/raspberry-gift.png" width="219" height="268" alt="Малинка">
           </article>
           <article class="article-gift">
             <h3 class="gift-title">Маршмеллоу даром!</h3>
-            <p class="gift-description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+            <p class="gift-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <button class="gift-button">Хочу подарок</button>
             <img class="gift-img" src="images/zefir-gift.png" width="219" height="268" alt="Маршмеллоу">
           </article>
@@ -217,48 +219,46 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <div class="page-footer-container">
-        <!--Список с "социальными" ссылками -->
-        <ul class="social-list footer-social-list">
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social-item">
-              <a class="social-link" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
-        <!-- Список - ссылки о "раскрытии информации" -->
-        <ul class="information-list">
-          <li class="information-item">
-            <a class="information-link" href="#"><b>Для поставщиков</b></a>
-          </li>
-          <li class="information-item">
-            <a class="information-link" href="#">О производстве</a>
-          </li>
-          <li class="information-item">
-            <a class="information-link" href="#">Наши документы</a>
-            </li>
-          <li class="information-item">
-            <a class="information-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-        <!-- Изображение и ссылка с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
-        <div class="copyright">
-          <a class="copyright-link" href="https://htmlacademy.ru/">
-            <img src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип «.html academy»">
+      <!--Список с "социальными" ссылками -->
+      <ul class="social-list footer-social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Телеграм</span>
           </a>
-          <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-        </div>
-    </div>
+        </li>
+        <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Список - ссылки о "раскрытии информации" -->
+      <ul class="information-list">
+        <li class="information-item">
+          <a class="information-link" href="#"><b>Для поставщиков</b></a>
+        </li>
+        <li class="information-item">
+          <a class="information-link" href="#">О производстве</a>
+        </li>
+        <li class="information-item">
+          <a class="information-link" href="#">Наши документы</a>
+          </li>
+        <li class="information-item">
+          <a class="information-link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <!-- Изображение и ссылка с "копирайтом", ссылки по ТЗ на главную страницу Академии -->
+      <div class="copyright">
+        <a class="copyright-link" href="https://htmlacademy.ru/">
+          <img src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип «.html academy»">
+        </a>
+        <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+      </div>
     </footer>
   </body>
 </html>

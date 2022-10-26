@@ -130,6 +130,7 @@ section:last-child {
 
 .slider-current {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .slider-inactive {
@@ -268,27 +269,34 @@ section:last-child {
 
 /* Contaner for blog + newsletter */
 
-.news-container {
+.news {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+
 }
 
 /* Blog section */
 
 .blog {
+  box-sizing: border-box;
   width: 570px;
   background-image: url("../images/blog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 32px 235px 68px 32px;
 }
 
+.blog-news {
+  margin: 0;
+  margin-bottom: 12px;
+}
 .blog-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
+
 
 /* Newsletter section */
 

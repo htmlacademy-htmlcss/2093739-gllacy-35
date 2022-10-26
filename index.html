@@ -52,20 +52,25 @@
         <!-- Текстовый раздел слайдера с <h2> -->
       <section class="products-slider">
         <div class="slider-current">
+          <div>
           <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="slider-order" type="button">Заказать</button>
-          <img class="product-current" src="images/icecream-slider-1.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
+
         </div>
-        <!-- Раздел с кнопками перелистывания -->
-        <div class="slider-control">
+        <img class="product-current" src="images/icecream-slider-1.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
+          <div class="slider-control">
             <button class="slider-previous" type="button">
               <span class="visually-hidden">Предыдущий продукт</span>
             </button>
             <button class="slider-next" type="button">
               <span class="visually-hidden">Следующий продукт</span>
             </button>
+          </div>
+
         </div>
+        <!-- Раздел с кнопками перелистывания -->
+
         <div class="slider-inactive">
             <img class="product-inactive" src="images/icecream-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
             <img class="product-inactive" src="images/icecream-slider-3.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
@@ -163,13 +168,15 @@
       <!-- Блок "преимуществ" -->
       <!-- По смыслу <h2 class="products-about"> не совсем заголовок, тег используется скорее для структурности -->
       <section class="products-advantages">
-        <h2 class="section-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <div class="advantages-container">
+        <h2 class="section-title advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantage-list">
           <li class="advantage-item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
           <li class="advantage-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
           <li class="advantage-item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
           <li class="advantage-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
         </ul>
+      </div>
       </section>
       <!-- Блок с новыми новостяи из блога -->
       <section class="news">

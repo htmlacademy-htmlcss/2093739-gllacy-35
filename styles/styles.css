@@ -126,24 +126,38 @@ section:last-child {
 .products-slider {
   display: flex;
   flex-wrap: wrap;
+  padding: 21px 0 0 70px;
 }
 
 .slider-current {
   display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  width: 797px;
+}
+
+.slider-control {
+  width: 306px;
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 .slider-inactive {
   display: flex;
+  width: 303px;
 }
 
 .slider-title {
+  width: 470px;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  margin: 0;
 }
 
 .slider-description {
+  margin: 0;
+  width: 470px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -256,16 +270,32 @@ section:last-child {
 
 .products-advantages {
   background-image: url("../images/advantages-background.jpg");
-  background-size: 100% auto;
+  background-size: auto 100% ;
   background-repeat: no-repeat;
+  padding: 24px;
 }
 
-.products-about {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-  }
+.advantages-container {
+  background-color: #FFFFFF;
+  padding: 56px 40px;
+}
+
+.section-title.advantages-title {
+  margin: 0 auto 56px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 26px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantage-item {
+  width: 508px;
+}
 
 /* Contaner for blog + newsletter */
 

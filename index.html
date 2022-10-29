@@ -52,25 +52,20 @@
         <!-- Текстовый раздел слайдера с <h2> -->
       <section class="products-slider">
         <div class="slider-current">
-          <div>
           <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
           <button class="slider-order" type="button">Заказать</button>
-
-        </div>
-        <img class="product-current" src="images/icecream-slider-1.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
-          <div class="slider-control">
-            <button class="slider-previous" type="button">
-              <span class="visually-hidden">Предыдущий продукт</span>
-            </button>
-            <button class="slider-next" type="button">
-              <span class="visually-hidden">Следующий продукт</span>
-            </button>
-          </div>
-
+          <img class="product-current" src="images/icecream-slider-1.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом">
         </div>
         <!-- Раздел с кнопками перелистывания -->
-
+        <div class="slider-control">
+          <button class="slider-previous" type="button">
+            <span class="visually-hidden">Предыдущий продукт</span>
+          </button>
+          <button class="slider-next" type="button">
+            <span class="visually-hidden">Следующий продукт</span>
+          </button>
+        </div>
         <div class="slider-inactive">
             <img class="product-inactive" src="images/icecream-slider-2.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана">
             <img class="product-inactive" src="images/icecream-slider-3.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу">
@@ -126,7 +121,7 @@
           </article>
           <article class="article-gift">
             <h3 class="gift-title">Маршмеллоу даром!</h3>
-            <p class="gift-description">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+            <p class="gift-description">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
             <button class="gift-button">Хочу подарок</button>
           </article>
         </div>
@@ -140,28 +135,28 @@
             <h3 class="card-title">Малинка</h3>
             <p class="card-description">Сливочное мороженое с малиновым джемом</p>
             <p class="card-price"><b>310 ₽/кг</b></p>
-            <button class="buy-button">В корзину</button>
+            <button class="buy-button"></button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="images/catalog/pistachio.jpg" width="168" height="168" alt="Мороженое «Фисташка»">
             <h3 class="card-title">Фисташка</h3>
             <p class="card-description">Фисташковый пломбир с кусочками шоколада</p>
             <p class="card-price"><b>340 ₽/кг</b></p>
-            <button class="buy-button">В корзину</button>
+            <button class="buy-button"></button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="images/catalog/blueberry.jpg" width="168" height="168" alt="Мороженое «Черника»">
             <h3 class="card-title">Черника</h3>
             <p class="card-description">Крем-брюле с черничным джемом</p>
             <p class="card-price"><b>330 ₽/кг</b></p>
-            <button class="buy-button">В корзину</button>
+            <button class="buy-button"></button>
           </li>
           <li class="product-card popular-card">
             <img class="card-img" src="images/catalog/bubble-gym.jpg" width="168" height="168" alt="Мороженое «Бабл-гам»">
             <h3 class="card-title">Бабл-гам</h3>
             <p class="card-description">Ванильный пломбир со сладкой посыпкой</p>
             <p class="card-price"><b>320 ₽/кг</b></p>
-            <button class="buy-button">В корзину</button>
+            <button class="buy-button"></button>
           </li>
         </ul>
         </section>
@@ -186,17 +181,21 @@
         </article>
         <!-- Блок для подписки на рассылку с полем ввода почты -->
         <article class="newsletter">
-          <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" id="newsletter-mail" name="newsletter-mail" placeholder="email@example.com" required>
-            <button class="submit newsletter-submit" type="submit">Отправить</button>
-          </form>
+          <div class="newsletter-container">
+            <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" id="newsletter-mail" name="newsletter-mail" placeholder="email@example.com" required>
+              <button class="submit newsletter-submit" type="submit">Отправить</button>
+            </form>
+        </div>
         </article>
       </section>
       <!-- Блок с информацией о доставке и формой -->
       <section class="delivery">
-        <h2 class="section-title delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <div class="delivery-info">
+          <h2 class="section-title delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-text">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <label class="delivery-label" for="delivery-date">Дата</label>
@@ -246,11 +245,11 @@
           <a class="information-link" href="#"><b>Для поставщиков</b></a>
         </li>
         <li class="information-item">
-          <a class="information-link" href="#">О производстве</a>
-        </li>
-        <li class="information-item">
           <a class="information-link" href="#">Наши документы</a>
           </li>
+        <li class="information-item">
+          <a class="information-link" href="#">О производстве</a>
+        </li>
         <li class="information-item">
           <a class="information-link" href="#">Экологические стандарты</a>
         </li>
